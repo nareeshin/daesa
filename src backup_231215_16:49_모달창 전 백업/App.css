@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+* {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.Controller {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 320px;
+  z-index: 1;
+}
+/*  *  *  *  *  *  *  *  *  */
+.ContainerCtr {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "CtrA CtrB CtrC CtrD";
+  height: 100%;
+}
+.List {
+  position: relative;
+  top: 320px;
+  z-index: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  height: 72vh - 26px;
+  overflow-y: hidden;
+}
+/*  *  *  *  * Table *  *  *  *  */
+.TableContainer {
+  height: 100%;
+  position: relative;
+}
+.TheadTable {
+  top: 320px;
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  color: rgb(50, 50, 50);
+  /* border-top: 2px solid rgb(110, 110, 110);
+  border-bottom: 2px solid rgb(110, 110, 110); */
+  border-top: 2px solid #636363;
+  /* background-color: black; */
+  height: 34px;
+}
+.TheadTable th {
+  /* border-radius: 0px 0px 16px 16px; */
+  background-color: #777777;
+  color: #2f2f2f;
+  box-shadow: 2px 1px 1px bla;
+}
+.TBodyTable {
+  position: relative;
+  margin: 40px 0 0 0;
+  height: 100%;
+}
+.index {
+  height: 32px;
+  font-size: 0.6em;
+  padding: 0px;
+  position: relative;
+  border-right: 2px solid rgb(150, 150, 150);
+  text-align: center;
+}
+#indexYear {
+  width: 4vw;
+}
+#indexMovie {
+  width: 14vw;
+}
+#indexDialogue {
+  width: 52vw;
+}
+#indexActor {
+  width: 4vw;
+}
+#indexDirector {
+  width: 4vw;
+}
+#indexSource {
+  width: 4vw;
+}
+#indexScenario {
+  width: 4vw;
+}
+#indexAdaptation {
+  width: 4vw;
+}
+#indexClip {
+  width: 5vw;
+}
+#indexCommentary {
+  width: 5vw;
+}
+.ListData {
+  font-size: 0.6em;
+  line-height: 1.89em;
+  padding: 0px 10px;
+  color: white;
+  position: relative;
+  border-bottom: 2px solid rgb(50, 50, 50);
+  text-align: center;
+}
+.ListContainer tr:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.ListContainer tr:hover > .ListData {
+  color: black;
+}
+.Year {
+  width: 4vw;
+}
+.Movie {
+  width: 14vw;
+}
+.Dialogue {
+  width: 52vw;
+}
+.Actor {
+  width: 4vw;
+}
+.Director {
+  width: 4vw;
+}
+.Source {
+  width: 4vw;
+}
+.Scenario {
+  width: 4vw;
+}
+.Adaptation {
+  width: 4vw;
+}
+.Clip {
+  width: 5vw;
+}
+.Commentary {
+  width: 5vw;
+}
+.DataResult {
+  color: #707070;
+  text-align: center;
+  border-top: 3px solid #2e2e2e;
+  padding: 69px;
+  font-size: 0.7em;
+}

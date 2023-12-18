@@ -1,0 +1,148 @@
+/*  *  *  *  *  CtrC  *  *  *  *  */
+.CtrC {
+  grid-area: CtrC;
+  background-color: rgb(47, 47, 47);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "FilterActor FilterDirector FilterSource FilterScenario FilterAdaptation";
+  position: relative;
+  overflow: hidden;
+}
+
+.CtrC .subtitle {
+  background-color: rgb(120, 120, 120);
+  color: rgb(50, 50, 50);
+  font-weight: 800;
+  top: -18px;
+  left: 0px;
+  padding: 4px 4px 14px 4px;
+  border-radius: 6px 6px 6px 0px;
+  position: absolute;
+}
+.FilterActor {
+  grid-area: FilterActor;
+}
+.FilterDirector {
+  grid-area: FilterDirector;
+}
+.FilterSource {
+  grid-area: FilterSource;
+}
+.FilterScenario {
+  grid-area: FilterScenario;
+}
+.FilterAdaptation {
+  grid-area: FilterAdaptation;
+}
+.FilterActor,
+.FilterDirector,
+.FilterSource,
+.FilterScenario,
+.FilterAdaptation {
+  /* border-right: 2px solid red; */
+  /* overflow-y: scroll; */
+  position: relative;
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.carousel-container {
+  position: relative;
+  overflow-y: scroll;
+  width: 100%;
+  top: 0;
+  height: 310px;
+  margin: 16px 0px 0px 0px;
+  /* top: 48px; */
+  text-align: center;
+  background: rgb(33, 33, 33);
+  border-left: 4px solid rgb(120, 120, 120);
+  border-right: 4px solid rgb(120, 120, 120);
+  border-top: 24px solid rgb(120, 120, 120);
+  border-bottom: 24px solid rgb(120, 120, 120);
+  border-radius: 0px 10px 10px 10px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 354px;
+}
+.carousel-item {
+  padding: 2px 5px;
+  font-size: 1.2em;
+  line-height: 1.85em;
+  font-weight: 600;
+  color: rgb(190, 190, 190);
+  box-shadow: 2px 2px 2px black;
+}
+.selectorContainer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.3em;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.NavDown,
+.NavUp {
+  font-size: 15px;
+  font-weight: bold;
+  width: 50px;
+  position: absolute;
+}
+.NavUp {
+  top: 24px;
+  z-index: 9999999999;
+  overflow: hidden;
+}
+.NavDown {
+  top: 315px;
+  z-index: 9999999999;
+  overflow: hidden;
+}
+.NavUp:hover,
+.NavDown:hover {
+  cursor: pointer;
+}
+
+.selectorItem {
+  width: 100%;
+  height: 40px;
+  padding: 8px 4px;
+}
+
+.selectorItem span {
+  font-size: 0.9em;
+  color: black;
+  font-weight: 800;
+}
+
+.up {
+  top: 20px;
+  position: absolute;
+  left: 25px;
+  width: 50%;
+  z-index: 9999;
+  border-radius: 20px;
+  background: rgb(103, 103, 103);
+  color: rgb(20, 20, 20);
+}
+
+.down {
+  top: 307px;
+  position: absolute;
+  left: 25px;
+  width: 50%;
+  z-index: 9999;
+  border-radius: 20px;
+  background: rgb(103, 103, 103);
+  color: rgb(20, 20, 20);
+}

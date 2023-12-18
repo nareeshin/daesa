@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "PilseungGothic";
+  src: url("../../font/PilseungGothic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap";
+@font-face {
+  font-family: "Neutronic";
+  src: url("../../font/NeutronicHangeul-Regularv0.3.woff2") format("woff2");
+}
+.default-font {
+  font-family: "Neutronic", sans-serif;
+}
+.style-1 {
+  font-family: "PilseungGothic", serif;
+}
+.style-2 {
+  font-family: "PilseungGothic", serif;
+}
+.style-3 {
+  font-family: "PilseungGothic", serif;
+}
+.style-4 {
+  font-family: "PilseungGothic", serif;
+}
+.style-5 {
+  font-family: "PilseungGothic", serif;
+}
+.style-6 {
+  font-family: "PilseungGothic", serif;
+}
+
+/* Modal.css or your styling file */
+.CloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff; /* Button background color */
+  color: #000; /* Button text color */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.CloseButton:hover {
+  background-color: #ddd; /* Button background color on hover */
+}
+
+/* Add this to your CSS file or style tag */
+.PrintButton {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+}
+
+.PrintButton:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Add this to your CSS file or style tag */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #printable-modal-content,
+  #printable-modal-content * {
+    visibility: visible;
+  }
+
+  #printable-modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /* Apply styles based on style1Checked, style2Checked, etc. */
+  #printable-modal-content.style-1 {
+    /* Add styles for style-1 during print */
+    font-size: 20px;
+    color: #ff0000; /* Change color as needed */
+    /* Add any other styles you want to apply for style-1 during print */
+  }
+
+  #printable-modal-content.style-2 {
+    /* Add styles for style-2 during print */
+    font-size: 18px;
+    color: #00ff00; /* Change color as needed */
+    /* Add any other styles you want to apply for style-2 during print */
+  }
+
+  /* Add similar styles for other style options */
+
+  /* Add styles for the CloseButton during print if needed */
+  .CloseButton {
+    display: none; /* Hide the close button during print */
+  }
+
+  /* Add styles for the PrintButton during print if needed */
+  .PrintButton {
+    display: none; /* Hide the print button during print */
+  }
+}

@@ -1,0 +1,244 @@
+/*  *  *  *  *  Decade  *  *  *  *  */
+.DecadeSection {
+  /* border: 2px solid tomato; */
+  margin: 5px 5px 5px 70px;
+  position: relative;
+}
+
+.DecadeSection .subtitle {
+  background-color: rgb(180, 180, 180);
+  color: rgb(50, 50, 50);
+  font-weight: 800;
+  top: -20px;
+  left: -64px;
+  padding: 4px 15px 4px 4px;
+  border-radius: 6px;
+}
+
+.Decades {
+  z-index: 9;
+}
+.DecadeWrap {
+  width: 100%;
+  margin: 0px 4px;
+  border-radius: 0px 5px 5px 5px;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  padding: 2px;
+  border: 7px solid rgb(180, 180, 180);
+}
+.DecadeWrapInner {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  background-color: rgb(130, 130, 130);
+  border: 2px solid #545454;
+  border-radius: 10px;
+  justify-content: center;
+}
+.Decade {
+  width: 51px;
+  height: 68px;
+  position: relative;
+  margin: 2px 2px 23px 2px;
+}
+.Decade .Param {
+  font-size: 0.9em;
+  font-weight: 800;
+  padding: 4px 6px 0px;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  /* background: rgb(0, 0, 0); */
+  color: rgb(0 0 0);
+  border-radius: 8px;
+}
+.DecadeLabel {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #333333 0%, #464646 40%, #454545 100%);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5),
+    0px 1px 0px rgb(167, 167, 167);
+}
+.DecadeLabel:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #ffee00;
+  box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.DecadeLabel:hover::after {
+  opacity: 0.6;
+}
+.DecadeInput[type="checkbox"] {
+  visibility: hidden;
+}
+.DecadeInput[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  animation: flicker 0.2s infinite 0.3s;
+}
+
+.switch {
+  background-color: black;
+  width: 50px;
+  height: 70px;
+  border-radius: 5px;
+  padding: 6px 7px 10px 7px;
+  perspective: 700px;
+}
+.switch input {
+  display: none;
+}
+.switch input:checked + .button {
+  transform: translateZ(20px) rotateX(15deg);
+  /* box-shadow: 0 10px 20px #ffff00; */
+}
+.switch input:checked + .button .light {
+  animation: flicker 0.2s infinite 0.3s;
+}
+.switch input:checked + .button .shine {
+  opacity: 1;
+}
+.switch input:checked + .button .shadow {
+  opacity: 0;
+}
+.switch .button {
+  transition: all 0.1s cubic-bezier(1, 0, 1, 1);
+  transform-origin: center center -20px;
+  transform: translateZ(20px) rotateX(-25deg);
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background: linear-gradient(
+    #484848 0%,
+    #888888 30%,
+    #6a6a6a 70%,
+    #4f4f4f 100%
+  );
+  background-repeat: no-repeat;
+}
+.switch .button:hover {
+  background: linear-gradient(
+    #ffee00 0%,
+    #ffee00 30%,
+    #6a6a6a 70%,
+    #4f4f4f 100%
+  );
+}
+.switch .button::before {
+  content: "";
+  background: linear-gradient(
+        #cdcdcd 0%,
+        #838383 30%,
+        #444444 70%,
+        #3e3e3e 100%
+      )
+      50% 50%/97% 97%,
+    #2e2e2e;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30px;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  position: absolute;
+  top: 0;
+}
+.switch .button::after {
+  content: "";
+  background-image: linear-gradient(#7d7500, #212400);
+  width: 100%;
+  height: 60px;
+  transform-origin: top;
+  transform: translateY(60px) rotateX(-92deg);
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 15px 0px 0px black, 0 30px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.switch .light {
+  opacity: 0;
+  animation: light-off 1s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ffee00 10%, #ffee00 50%, #7d7500 100%);
+}
+.switch .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-image: radial-gradient(transparent 30%, rgb(117 107 47 / 70%) 70%); */
+  background-size: 40px 1px;
+}
+.switch .characters {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(white, white) 50% 20%/5% 20%,
+    radial-gradient(
+        circle,
+        transparent 50%,
+        white 52%,
+        white 70%,
+        transparent 72%
+      )
+      50% 80%/33% 25%; */
+  background-repeat: no-repeat;
+}
+.switch .shine {
+  transition: all 0.3s cubic-bezier(1, 0, 1, 1);
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(white, transparent 3%) 50% 50%/97% 97%,
+    linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        transparent 50%,
+        transparent 80%,
+        rgb(191 191 191 / 50%)
+      )
+      50%;
+  background-repeat: no-repeat;
+}
+.switch .shadow {
+  transition: all 0.3s cubic-bezier(1, 0, 1, 1);
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent 90%, rgba(0, 0, 0, 0.9));
+  background-repeat: no-repeat;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes light-off {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+}

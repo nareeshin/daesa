@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "NectoMono";
+  src: url("../../font/NectoMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Neutronic";
+  src: url("../../font/NeutronicHangeul-Regularv0.3.woff2") format("woff2");
+}
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Gothic+A1:wght@500;700;900&family=Poppins:wght@800&display=swap");
+
+* {
+  font-family: "Gothic A1", sans-serif;
+}
+
+.subtitle {
+  font-family: "Neutronic", sans-serif;
+  font-size: 1em;
+  color: rgb(77, 77, 77);
+  font-weight: 800;
+  position: absolute;
+  z-index: 1;
+}
+::-webkit-scrollbar {
+  height: 10px;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  /* box-shadow: inset 0 0 5px rgb(167, 167, 167); */
+  border-radius: 2px;
+  background-image: url(../../imgs/scroll_bg.png);
+  background-size: contain;
+  /* border-bottom: 5px solid rgb(96, 96, 96);
+  border-top: 5px solid black; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999999;
+}
+
+.CtrA {
+  grid-area: CtrA;
+  background-color: #828282;
+  display: grid;
+  grid-template-rows: 0.7fr 1.4fr; /*  0.7fr 2.2fr 복구 */
+  gap: 0px 0px;
+  grid-template-areas:
+    "Decade"
+    "Character";
+}
+
+.CtrB {
+  grid-area: CtrB;
+  background-color: #828282;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+}
+
+.CtrC {
+  grid-area: CtrC;
+  background-color: #828282;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "FilterActor FilterDirector FilterSource FilterScenario FilterAdaptation";
+  position: relative;
+  overflow: hidden;
+}
+.CtrD {
+  grid-area: CtrD;
+  background-color: #828282;
+  display: grid;
+  grid-template-rows: 0.5fr 1.8fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Switch"
+    "DesignEditor";
+  padding-right: 25px;
+}
