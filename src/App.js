@@ -255,7 +255,7 @@ const App = () => {
   return (
     <Routes>
       <Route
-        path={process.env.PUBLIC_URL + "/"}
+        path="/"
         element={
           <Home
             decades={decades}
@@ -287,10 +287,7 @@ const App = () => {
           />
         }
       />
-      <Route
-        path={process.env.PUBLIC_URL + "/rountes/detail/:id"}
-        element={<Detail movies={movies} />}
-      />
+      <Route path="/detail/:id" element={<Detail movies={movies} />} />
     </Routes>
   );
 };
