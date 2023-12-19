@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/daesa/static/css/main.a917650f.css",
+    "main.js": "/daesa/static/js/main.148f767e.js",
+    "static/js/787.db39e3ea.chunk.js": "/daesa/static/js/787.db39e3ea.chunk.js",
+    "static/media/DOSGothic.ttf": "/daesa/static/media/DOSGothic.56e0d614bf83161e6e79.ttf",
+    "static/media/PilseungGothic-Regular.otf": "/daesa/static/media/PilseungGothic-Regular.ade4963a6a9c01fecbe9.otf",
+    "static/media/NeutronicHangeul-Regularv0.3.woff2": "/daesa/static/media/NeutronicHangeul-Regularv0.3.9606b77f1359437e7c7a.woff2",
+    "static/media/NectoMono-Regular.woff2": "/daesa/static/media/NectoMono-Regular.050dcd1a4dde19693c65.woff2",
+    "index.html": "/daesa/index.html",
+    "main.a917650f.css.map": "/daesa/static/css/main.a917650f.css.map",
+    "main.148f767e.js.map": "/daesa/static/js/main.148f767e.js.map",
+    "787.db39e3ea.chunk.js.map": "/daesa/static/js/787.db39e3ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a917650f.css",
+    "static/js/main.148f767e.js"
+  ]
+}
