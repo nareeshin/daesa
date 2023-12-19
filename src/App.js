@@ -14,6 +14,7 @@ import "./css/Character.css";
 import "./css/Keyword.css";
 import "./css/People.css";
 import "./css/SwitchAndDesignEditor.css";
+// import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 
 const App = () => {
   const [movies, setMovies] = useState(moviesData);
