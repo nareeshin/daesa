@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.0f4db0d8.css",
-    "main.js": "./static/js/main.b816e796.js",
+    "main.js": "./static/js/main.4bda42c1.js",
     "static/js/787.db39e3ea.chunk.js": "./static/js/787.db39e3ea.chunk.js",
     "static/media/DOSGothic.ttf": "./static/media/DOSGothic.56e0d614bf83161e6e79.ttf",
     "static/media/PilseungGothic-Regular.otf": "./static/media/PilseungGothic-Regular.ade4963a6a9c01fecbe9.otf",
@@ -9,8 +9,11 @@
     "static/media/NectoMono-Regular.woff2": "./static/media/NectoMono-Regular.050dcd1a4dde19693c65.woff2",
     "index.html": "./index.html",
     "main.0f4db0d8.css.map": "./static/css/main.0f4db0d8.css.map",
-    "main.b816e796.js.map": "./static/js/main.b816e796.js.map",
+    "main.4bda42c1.js.map": "./static/js/main.4bda42c1.js.map",
     "787.db39e3ea.chunk.js.map": "./static/js/787.db39e3ea.chunk.js.map"
   },
-  "entrypoints": ["static/css/main.0f4db0d8.css", "static/js/main.b816e796.js"]
+  "entrypoints": [
+    "static/css/main.0f4db0d8.css",
+    "static/js/main.4bda42c1.js"
+  ]
 }
